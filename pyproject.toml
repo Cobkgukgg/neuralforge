@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forgenn-ml"
+version = "1.0.0"
+description = "Modern neural networks in pure NumPy - Transformers, ResNet, and more"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "ForgeNN Contributors", email = "nb652990@gmail.com"}
+]
+maintainers = [
+    {name = "ForgeNN Contributors", email = "nb652990@gmail.com"}
+]
+keywords = [
+    "deep-learning",
+    "neural-network",
+    "machine-learning",
+    "ai",
+    "transformer",
+    "resnet",
+    "attention",
+    "gelu",
+    "numpy",
+    "artificial-intelligence"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "matplotlib>=3.3.0",
+    "jupyter>=1.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+]
+viz = [
+    "matplotlib>=3.3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Cobkgukgg/forgenn"
+Documentation = "https://github.com/Cobkgukgg/forgenn#readme"
+Repository = "https://github.com/Cobkgukgg/forgenn"
+"Bug Tracker" = "https://github.com/Cobkgukgg/forgenn/issues"
+Changelog = "https://github.com/Cobkgukgg/forgenn/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+packages = ["forgenn"]
+
+[tool.setuptools.package-data]
+forgenn = ["py.typed"]

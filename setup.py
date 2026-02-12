@@ -12,7 +12,7 @@ with open(os.path.join(current_dir, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="forgenn",
+    name="forgenn-ml",
     version="1.0.0",
     author="ForgeNN Contributors",
     author_email="nb652990@gmail.com",
